@@ -9,7 +9,7 @@ class App extends Component {
     super(props);
 
     this.state = {
-      image: null,
+      image: 'https://fontmeme.com/images/Pokemon-Logo.jpg',
       name: '', 
       pokemonId: 2
     }
@@ -41,7 +41,7 @@ class App extends Component {
     return (
       <div className="App">
       <div className='display'>
-      <img src={this.state.image} alt="Click >> to get Pokemon!"/>
+      <img className='image' src={this.state.image} alt="Click >> to get Pokemon!"/>
         <h1>{this.state.name}</h1>
       </div>
         
