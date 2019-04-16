@@ -31,3 +31,23 @@
     transform: rotate(360deg);
   }
 }
+
+.display {
+  width: 40%;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border: solid #8787be;
+  border-radius: 36px;
+}
+
+.buttons {
+  cursor: pointer;
+  color: white;
+  background-color: #8787be;
+  height: 25px;
+  width: 205px;
+  margin: auto;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
