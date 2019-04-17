@@ -17,6 +17,7 @@ class App extends Component {
 
     this.handleClick = this.handleClick.bind( this )
     this.getNext = this.getNext.bind( this )
+    this.getPrevious = this.getPrevious.bind( this )
   }
 
   
@@ -39,6 +40,13 @@ class App extends Component {
     this.handleClick(this.state.pokemonId)
   }
 
+  getPrevious(){
+    this.setState({
+      pokemonId: this.state.pokemonId - 1
+    })
+    this.handleClick(this.state.pokemonId)
+  }
+
   render() {
     
     return (
@@ -51,7 +59,11 @@ class App extends Component {
         
       <div> 
         <div className='buttons' onClick={() => this.handleClick(this.state.pokemonId)}>Click to get pokemon</div>
+        <div className='pNDiv'>
+        <div className='buttons' onClick={this.getPrevious}>Previous Pokemon</div>
         <div className='buttons' onClick={this.getNext}>Next Pokemon</div>
+        </div>
+        
       </div>
       </div>
     );

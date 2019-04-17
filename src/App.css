@@ -55,3 +55,10 @@
 .image {
   width: 200px;
 }
+
+.pNDiv {
+  display: flex;
+  justify-content: space-between;
+  width:  600px;
+  margin: auto;
+}
